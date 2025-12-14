@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>にゃんこ占い - 今日の運勢</title>
+    <meta name="description" content="かわいいにゃんこがあなたの今日の運勢を占います！">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <main class="container">
+        <header>
+            <h1>✨ にゃんこ占い ✨</h1>
+            <p>今日の運勢を占ってみてね！</p>
+        </header>
+
+        <section class="fortune-card">
+            <div class="character-area">
+                <img src="assets/cat_icon.png" alt="占い猫" id="fortune-cat" class="floating">
+            </div>
+            
+            <div class="interaction-area">
+                <div id="result-display" class="hidden">
+                    <h2 id="fortune-title">大吉</h2>
+                    <p id="fortune-text">今日は最高の一日になりそう！<br>おいしいものを食べて幸せ気分♪</p>
+                    <button id="reset-btn" class="cute-btn">もう一度占う</button>
+                </div>
+
+                <div id="start-display">
+                    <button id="fortune-btn" class="cute-btn pulse">占う！</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
